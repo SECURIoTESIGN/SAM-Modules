@@ -1,0 +1,385 @@
+security_requirement, need_stream_cipher, sensitive_domain, circuit_area_max, circuit_area_min, throughput_max, throughput_min, hardware_type, energy, recommendation_id
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,7
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,6
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,8
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,38
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,38
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,7
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,7
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,7
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,7
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,9
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,38
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,38
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,7
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,7
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,10
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,11
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,12
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,13
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,14
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,15
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,15
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,10
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,16
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,4
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,17
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,14
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,15
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,15
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,7
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,6
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,38
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,38
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Confidentiality, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,7
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,8
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,38
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,38
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Confidentiality, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,16
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,10
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,11
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,13
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,13
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,14
+Confidentiality, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,16
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,10
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,16
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,16
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,17
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,17
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,13
+Confidentiality, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,13
+Confidentiality, 1, 1, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Low Power,7
+Confidentiality, 1, 1, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Low Power,6
+Confidentiality, 1, 1, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,8
+Confidentiality, 1, 1, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,38
+Confidentiality, 1, 1, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,38
+Confidentiality, 1, 1, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,7
+Confidentiality, 1, 1, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Low Power,7
+Confidentiality, 1, 0, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Low Power,7
+Confidentiality, 1, 0, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Low Power,7
+Confidentiality, 1, 0, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,9
+Confidentiality, 1, 0, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,38
+Confidentiality, 1, 0, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,38
+Confidentiality, 1, 0, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,7
+Confidentiality, 1, 0, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Low Power,7
+Confidentiality, 0, 1, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Low Power,10
+Confidentiality, 0, 1, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Low Power,11
+Confidentiality, 0, 1, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,12
+Confidentiality, 0, 1, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,13
+Confidentiality, 0, 1, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,14
+Confidentiality, 0, 1, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,15
+Confidentiality, 0, 1, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Low Power,15
+Confidentiality, 0, 0, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Low Power,10
+Confidentiality, 0, 0, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Low Power,16
+Confidentiality, 0, 0, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,4
+Confidentiality, 0, 0, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,17
+Confidentiality, 0, 0, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,14
+Confidentiality, 0, 0, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,15
+Confidentiality, 0, 0, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Low Power,15
+Confidentiality, 1, 1, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Confidentiality, 1, 1, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,7
+Confidentiality, 1, 1, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,6
+Confidentiality, 1, 1, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,38
+Confidentiality, 1, 1, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,38
+Confidentiality, 1, 1, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Confidentiality, 1, 1, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Confidentiality, 1, 0, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Confidentiality, 1, 0, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,7
+Confidentiality, 1, 0, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,8
+Confidentiality, 1, 0, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,38
+Confidentiality, 1, 0, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,38
+Confidentiality, 1, 0, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Confidentiality, 1, 0, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Confidentiality, 0, 1, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,16
+Confidentiality, 0, 1, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,10
+Confidentiality, 0, 1, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,11
+Confidentiality, 0, 1, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,13
+Confidentiality, 0, 1, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,13
+Confidentiality, 0, 1, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,14
+Confidentiality, 0, 1, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,16
+Confidentiality, 0, 0, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,10
+Confidentiality, 0, 0, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,16
+Confidentiality, 0, 0, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,16
+Confidentiality, 0, 0, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,17
+Confidentiality, 0, 0, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,17
+Confidentiality, 0, 0, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,13
+Confidentiality, 0, 0, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,13
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,19
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,19
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,19
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,20
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,21
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,22
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,23
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,21
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,23
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,19
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,24
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,24
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,23
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,21
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,25
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,21
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,21
+Integrity, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,26
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,23
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,21
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,21
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,27
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,22
+Integrity, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,28
+Integrity, , 1, 738, 864, 0.8, 1,Application-specific Integrated Circuit (ASIC),Low Power,19
+Integrity, , 1, 865, 1060, 0.3, 2.8,Application-specific Integrated Circuit (ASIC),Low Power,19
+Integrity, , 1, 1061, 1127, 0.5, 17.8,Application-specific Integrated Circuit (ASIC),Low Power,19
+Integrity, , 1, 1128, 1396, 1, 2.7,Application-specific Integrated Circuit (ASIC),Low Power,20
+Integrity, , 1, 1397, 2190, 2.7, 17.8,Application-specific Integrated Circuit (ASIC),Low Power,21
+Integrity, , 1, 2191, 4362, 0.4, 50.0,Application-specific Integrated Circuit (ASIC),Low Power,22
+Integrity, , 0, 738, 864, 0.8, 1,Application-specific Integrated Circuit (ASIC),Low Power,23
+Integrity, , 0, 865, 1060, 0.3, 2.8,Application-specific Integrated Circuit (ASIC),Low Power,21
+Integrity, , 0, 1061, 1127, 0.5, 17.8,Application-specific Integrated Circuit (ASIC),Low Power,23
+Integrity, , 0, 1128, 1396, 1, 2.7,Application-specific Integrated Circuit (ASIC),Low Power,19
+Integrity, , 0, 1397, 2190, 2.7, 17.8,Application-specific Integrated Circuit (ASIC),Low Power,24
+Integrity, , 0, 2191, 4362, 0.4, 50.0,Application-specific Integrated Circuit (ASIC),Low Power,24
+Integrity, , 1, 738, 864, 0.8, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,23
+Integrity, , 1, 865, 1060, 0.3, 2.8,Application-specific Integrated Circuit (ASIC),Ultra-low Power,21
+Integrity, , 1, 1061, 1127, 0.5, 17.8,Application-specific Integrated Circuit (ASIC),Ultra-low Power,25
+Integrity, , 1, 1128, 1396, 1, 2.7,Application-specific Integrated Circuit (ASIC),Ultra-low Power,21
+Integrity, , 1, 1397, 2190, 2.7, 17.8,Application-specific Integrated Circuit (ASIC),Ultra-low Power,21
+Integrity, , 1, 2191, 4362, 0.4, 50.0,Application-specific Integrated Circuit (ASIC),Ultra-low Power,26
+Integrity, , 0, 738, 864, 0.8, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,23
+Integrity, , 0, 865, 1060, 0.3, 2.8,Application-specific Integrated Circuit (ASIC),Ultra-low Power,21
+Integrity, , 0, 1061, 1127, 0.5, 17.8,Application-specific Integrated Circuit (ASIC),Ultra-low Power,21
+Integrity, , 0, 1128, 1396, 1, 2.7,Application-specific Integrated Circuit (ASIC),Ultra-low Power,27
+Integrity, , 0, 1397, 2190, 2.7, 17.8,Application-specific Integrated Circuit (ASIC),Ultra-low Power,22
+Integrity, , 0, 2191, 4362, 0.4, 50.0,Application-specific Integrated Circuit (ASIC),Ultra-low Power,28
+Authentication, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,39
+Authentication, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,39
+Authentication, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,39
+Authentication, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,39
+Authentication, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,39
+Authentication, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,39
+Authentication, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,39
+Authentication, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,39
+Authentication, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,39
+Authentication, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,39
+Authentication, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,39
+Authentication, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,39
+Authentication, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,39
+Authentication, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,39
+Authentication, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,39
+Authentication, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,39
+Authentication, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,39
+Authentication, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,39
+Authentication, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,39
+Authentication, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,39
+Authentication, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,39
+Authentication, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,39
+Authentication, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,39
+Authentication, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,39
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,18
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,8
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,8
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,40
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,40
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,18
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,18
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,18
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,7
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,9
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,40
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,40
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,18
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,18
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,10
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,11
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,12
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,13
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,14
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,15
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,15
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,10
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,16
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,4
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,17
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,14
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,15
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,15
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,7
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,6
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,40
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,40
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Privacy, 1, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,7
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,8
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,40
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,40
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Privacy, 1, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,18
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,5
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,16
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,11
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,13
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,13
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,16
+Privacy, 0, 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,16
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,10
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,10
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,16
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,17
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,17
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,13
+Privacy, 0, 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,13
+Privacy, 1, 1, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Low Power,18
+Privacy, 1, 1, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Low Power,6
+Privacy, 1, 1, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,8
+Privacy, 1, 1, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,40
+Privacy, 1, 1, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,40
+Privacy, 1, 1, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,18
+Privacy, 1, 1, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Low Power,18
+Privacy, 1, 0, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Low Power,18
+Privacy, 1, 0, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Low Power,7
+Privacy, 1, 0, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,9
+Privacy, 1, 0, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,40
+Privacy, 1, 0, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,40
+Privacy, 1, 0, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,18
+Privacy, 1, 0, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Low Power,18
+Privacy, 0, 1, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Low Power,10
+Privacy, 0, 1, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Low Power,11
+Privacy, 0, 1, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,12
+Privacy, 0, 1, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,13
+Privacy, 0, 1, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,14
+Privacy, 0, 1, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,15
+Privacy, 0, 1, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Low Power,15
+Privacy, 0, 0, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Low Power,10
+Privacy, 0, 0, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Low Power,16
+Privacy, 0, 0, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,4
+Privacy, 0, 0, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,17
+Privacy, 0, 0, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,14
+Privacy, 0, 0, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,15
+Privacy, 0, 0, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Low Power,15
+Privacy, 1, 1, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Privacy, 1, 1, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,7
+Privacy, 1, 1, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,6
+Privacy, 1, 1, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,40
+Privacy, 1, 1, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,40
+Privacy, 1, 1, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Privacy, 1, 1, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Privacy, 1, 0, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Privacy, 1, 0, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,7
+Privacy, 1, 0, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,8
+Privacy, 1, 0, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,40
+Privacy, 1, 0, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,40
+Privacy, 1, 0, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Privacy, 1, 0, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,18
+Privacy, 0, 1, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,5
+Privacy, 0, 1, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,16
+Privacy, 0, 1, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,11
+Privacy, 0, 1, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,13
+Privacy, 0, 1, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,13
+Privacy, 0, 1, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,16
+Privacy, 0, 1, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,16
+Privacy, 0, 0, 1571, 1799, 2.6, 200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,10
+Privacy, 0, 0, 1800, 2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,10
+Privacy, 0, 0, 2501, 8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,16
+Privacy, 0, 0, 810, 970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,17
+Privacy, 0, 0, 971, 1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,17
+Privacy, 0, 0, 1111, 14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,13
+Privacy, 0, 0, 1401, 1570, 177.8, 237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,13
+Non-repudiation, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,41
+Non-repudiation, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,41
+Non-repudiation, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Low Power,41
+Non-repudiation, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,41
+Non-repudiation, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,41
+Non-repudiation, , 1, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Field-programmable Gate Array (FPGA),Ultra-low Power,41
+Non-repudiation, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,41
+Non-repudiation, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,41
+Non-repudiation, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Low Power,41
+Non-repudiation, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,41
+Non-repudiation, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,41
+Non-repudiation, , 1, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,41
+Non-repudiation, , 0, 1, 1, 1, 1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,41
+Confidentiality plus Authenticity, 1, 1, 1348, 4500, 1, 256.9,Field-programmable Gate Array (FPGA),Low Power,29
+Confidentiality plus Authenticity, 1, 1, 891, 1347.9, 1.0, 280.9,Field-programmable Gate Array (FPGA),Low Power,30
+Confidentiality plus Authenticity, 1, 1, 413, 890.9, 1, 347,Field-programmable Gate Array (FPGA),Low Power,30
+Confidentiality plus Authenticity, 1, 1, 135, 412.9, 1, 389,Field-programmable Gate Array (FPGA),Low Power,30
+Confidentiality plus Authenticity, 1, 0, 1348, 4500, 1, 256.9,Field-programmable Gate Array (FPGA),Low Power,29
+Confidentiality plus Authenticity, 1, 0, 891, 1347.9, 1.0, 280.9,Field-programmable Gate Array (FPGA),Low Power,30
+Confidentiality plus Authenticity, 1, 0, 413, 890.9, 1, 347,Field-programmable Gate Array (FPGA),Low Power,30
+Confidentiality plus Authenticity, 1, 0, 135, 412.9, 1, 389,Field-programmable Gate Array (FPGA),Low Power,30
+Confidentiality plus Authenticity, 0, 1, 1348, 4500, 1, 256.9,Field-programmable Gate Array (FPGA),Low Power,30
+Confidentiality plus Authenticity, 0, 1, 891, 1347.9, 1.0, 280.9,Field-programmable Gate Array (FPGA),Low Power,31
+Confidentiality plus Authenticity, 0, 1, 413, 890.9, 1, 347,Field-programmable Gate Array (FPGA),Low Power,32
+Confidentiality plus Authenticity, 0, 1, 135, 412.9, 1, 389,Field-programmable Gate Array (FPGA),Low Power,33
+Confidentiality plus Authenticity, 0, 0, 1348, 4500, 1, 256.9,Field-programmable Gate Array (FPGA),Low Power,34
+Confidentiality plus Authenticity, 0, 0, 891, 1347.9, 1.0, 280.9,Field-programmable Gate Array (FPGA),Low Power,31
+Confidentiality plus Authenticity, 0, 0, 413, 890.9, 1, 347,Field-programmable Gate Array (FPGA),Low Power,35
+Confidentiality plus Authenticity, 0, 0, 135, 412.9, 1, 389,Field-programmable Gate Array (FPGA),Low Power,30
+Confidentiality plus Authenticity, 1, 1, 1348, 4500, 1, 256.9,Field-programmable Gate Array (FPGA),Ultra-low Power,29
+Confidentiality plus Authenticity, 1, 1, 891, 1347.9, 1.0, 280.9,Field-programmable Gate Array (FPGA),Ultra-low Power,30
+Confidentiality plus Authenticity, 1, 1, 413, 890.9, 1, 347,Field-programmable Gate Array (FPGA),Ultra-low Power,30
+Confidentiality plus Authenticity, 1, 1, 135, 412.9, 1, 389,Field-programmable Gate Array (FPGA),Ultra-low Power,30
+Confidentiality plus Authenticity, 1, 0, 1348, 4500, 1, 256.9,Field-programmable Gate Array (FPGA),Ultra-low Power,29
+Confidentiality plus Authenticity, 1, 0, 891, 1347.9, 1.0, 280.9,Field-programmable Gate Array (FPGA),Ultra-low Power,30
+Confidentiality plus Authenticity, 1, 0, 413, 890.9, 1, 347,Field-programmable Gate Array (FPGA),Ultra-low Power,30
+Confidentiality plus Authenticity, 1, 0, 135, 412.9, 1, 389,Field-programmable Gate Array (FPGA),Ultra-low Power,30
+Confidentiality plus Authenticity, 0, 1, 1348, 4500, 1, 256.9,Field-programmable Gate Array (FPGA),Ultra-low Power,32
+Confidentiality plus Authenticity, 0, 1, 891, 1347.9, 1.0, 280.9,Field-programmable Gate Array (FPGA),Ultra-low Power,34
+Confidentiality plus Authenticity, 0, 1, 413, 890.9, 1, 347,Field-programmable Gate Array (FPGA),Ultra-low Power,35
+Confidentiality plus Authenticity, 0, 1, 135, 412.9, 1, 389,Field-programmable Gate Array (FPGA),Ultra-low Power,30
+Confidentiality plus Authenticity, 0, 0, 1348, 4500, 1, 256.9,Field-programmable Gate Array (FPGA),Ultra-low Power,36
+Confidentiality plus Authenticity, 0, 0, 891, 1347.9, 1.0, 280.9,Field-programmable Gate Array (FPGA),Ultra-low Power,34
+Confidentiality plus Authenticity, 0, 0, 413, 890.9, 1, 347,Field-programmable Gate Array (FPGA),Ultra-low Power,35
+Confidentiality plus Authenticity, 0, 0, 135, 412.9, 1, 389,Field-programmable Gate Array (FPGA),Ultra-low Power,37
+Confidentiality plus Authenticity, 1, 1, 7950, 9000, 1, 5.5,Application-specific Integrated Circuit (ASIC),Low Power,29
+Confidentiality plus Authenticity, 1, 1, 6000, 7949, 1, 5.3,Application-specific Integrated Circuit (ASIC),Low Power,30
+Confidentiality plus Authenticity, 1, 1, 3100, 5999, 1, 6,Application-specific Integrated Circuit (ASIC),Low Power,30
+Confidentiality plus Authenticity, 1, 1, 2860, 3099, 1, 5,Application-specific Integrated Circuit (ASIC),Low Power,30
+Confidentiality plus Authenticity, 1, 0, 7950, 9000, 1, 5.5,Application-specific Integrated Circuit (ASIC),Low Power,29
+Confidentiality plus Authenticity, 1, 0, 6000, 7949, 1, 5.3,Application-specific Integrated Circuit (ASIC),Low Power,30
+Confidentiality plus Authenticity, 1, 0, 3100, 5999, 1, 6,Application-specific Integrated Circuit (ASIC),Low Power,30
+Confidentiality plus Authenticity, 1, 0, 2860, 3099, 1, 5,Application-specific Integrated Circuit (ASIC),Low Power,30
+Confidentiality plus Authenticity, 0, 1, 7950, 9000, 1, 5.5,Application-specific Integrated Circuit (ASIC),Low Power,30
+Confidentiality plus Authenticity, 0, 1, 6000, 7949, 1, 5.3,Application-specific Integrated Circuit (ASIC),Low Power,31
+Confidentiality plus Authenticity, 0, 1, 3100, 5999, 1, 6,Application-specific Integrated Circuit (ASIC),Low Power,32
+Confidentiality plus Authenticity, 0, 1, 2860, 3099, 1, 5,Application-specific Integrated Circuit (ASIC),Low Power,33
+Confidentiality plus Authenticity, 0, 0, 7950, 9000, 1, 5.5,Application-specific Integrated Circuit (ASIC),Low Power,34
+Confidentiality plus Authenticity, 0, 0, 6000, 7949, 1, 5.3,Application-specific Integrated Circuit (ASIC),Low Power,31
+Confidentiality plus Authenticity, 0, 0, 3100, 5999, 1, 6,Application-specific Integrated Circuit (ASIC),Low Power,35
+Confidentiality plus Authenticity, 0, 0, 2860, 3099, 1, 5,Application-specific Integrated Circuit (ASIC),Low Power,30
+Confidentiality plus Authenticity, 1, 1, 7950, 9000, 1, 5.5,Application-specific Integrated Circuit (ASIC),Ultra-low Power,29
+Confidentiality plus Authenticity, 1, 1, 6000, 7949, 1, 5.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,30
+Confidentiality plus Authenticity, 1, 1, 3100, 5999, 1, 6,Application-specific Integrated Circuit (ASIC),Ultra-low Power,30
+Confidentiality plus Authenticity, 1, 1, 2860, 3099, 1, 5,Application-specific Integrated Circuit (ASIC),Ultra-low Power,30
+Confidentiality plus Authenticity, 1, 0, 7950, 9000, 1, 5.5,Application-specific Integrated Circuit (ASIC),Ultra-low Power,29
+Confidentiality plus Authenticity, 1, 0, 6000, 7949, 1, 5.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,30
+Confidentiality plus Authenticity, 1, 0, 3100, 5999, 1, 6,Application-specific Integrated Circuit (ASIC),Ultra-low Power,30
+Confidentiality plus Authenticity, 1, 0, 2860, 3099, 1, 5,Application-specific Integrated Circuit (ASIC),Ultra-low Power,30
+Confidentiality plus Authenticity, 0, 1, 7950, 9000, 1, 5.5,Application-specific Integrated Circuit (ASIC),Ultra-low Power,32
+Confidentiality plus Authenticity, 0, 1, 6000, 7949, 1, 5.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,34
+Confidentiality plus Authenticity, 0, 1, 3100, 5999, 1, 6,Application-specific Integrated Circuit (ASIC),Ultra-low Power,35
+Confidentiality plus Authenticity, 0, 1, 2860, 3099, 1, 5,Application-specific Integrated Circuit (ASIC),Ultra-low Power,30
+Confidentiality plus Authenticity, 0, 0, 7950, 9000, 1, 5.5,Application-specific Integrated Circuit (ASIC),Ultra-low Power,36
+Confidentiality plus Authenticity, 0, 0, 6000, 7949, 1, 5.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,34
+Confidentiality plus Authenticity, 0, 0, 3100, 5999, 1, 6,Application-specific Integrated Circuit (ASIC),Ultra-low Power,35
+Confidentiality plus Authenticity, 0, 0, 2860, 3099, 1, 5,Application-specific Integrated Circuit (ASIC),Ultra-low Power,37
