@@ -22,6 +22,7 @@ For an hardware implementation of security algorithms the variables that have an
 The recommendation should be given when all the conditions are fulfilled by the user's system.
 If the security requirement doesn't use ciphers then there is no need to refer to the stream cipher condition. The correspondant column should be empty, as in the example below:
 `Integrity, ,1,...`
+
 Also, if the logic file needs to compare strings don't leave any space between commas.
 
 ## Software implementation conditions
@@ -57,4 +58,5 @@ If the system is being planned the relevant variables are:
 The recommendation should be given when all the conditions are fulfilled by the user's system.
 If the security requirement doesn't use ciphers then there is no need to refer to the stream cipher condition. The correspondant column should be empty, as in the example below:
 `Integrity, ,1,...`
+
 Also, if the logic file needs to compare strings don't leave any space between commas.
