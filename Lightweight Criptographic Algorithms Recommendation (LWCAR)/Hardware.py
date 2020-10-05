@@ -29,16 +29,18 @@
 """
 import json
 import pandas as pd
-import modules.utils
 
 sensitive_domains = ["Smart Healthcare", "Connected Car", "Smart Pet Monitoring", "Smart Environmental Monitoring", "Smart Automotive/Transportation", "Smart Agriculture", "Smart Retail", "Industrial Automation", "Smart Supply Chain", "Smart Banking/Financial applications", "Smart Elderly Monitoring", "Smart Kid Monitoring", "Smart Grid", "Smart City", "Smart Home"]
 stream_ciphers = ["Continuous", "Unknown"]
 
-def hardware_implementation(csv_filename, security_requirements, circuit_area_requirement, throughput_requirement, stream_cipher, sensitive_domain, hardware_type, energy_performance):
+def hardware_implementation(csv_filename, recommendations, security_requirements, circuit_area_requirement, throughput_requirement, stream_cipher, sensitive_domain, hardware_type, energy_performance):
     p_recommendations = []
 
     data = pd.read_csv(csv_filename, na_filter=False)
-    for i in range(len(security_requirements)):
+    for security_requirement in security_requirements:
+        no_rcmd_name = "No algorithm for "+security_requirement.lower()
+        no_rcmd_id = get_recommendation_id(recommendations, no_rcmd_name)
+        p_recommendations.append(no_rcmd_id)
         for row in data.values:
             security_requirement_req = row[0]
             stream_cipher_req = bool(row[1])
@@ -49,12 +51,19 @@ def hardware_implementation(csv_filename, security_requirements, circuit_area_re
             throughput_max = float(row[6])
             hardware_type_req = str(row[7])
             energy_performance_req = str(row[8])
-            rcmd_id = row[9]
+            rcmd_id = get_recommendation_id(recommendations, row[9])
 
             # We found a match for your system
-            if (security_requirements[i] == security_requirement_req) and stream_cipher == stream_cipher_req and sensitive_domain == sensitive_domain_req and (circuit_area_requirement <= circuit_area_max and circuit_area_requirement >= circuit_area_min) and (throughput_requirement <= throughput_max and throughput_requirement >= throughput_min) and hardware_type == hardware_type_req and energy_performance == energy_performance_req:
+            if (security_requirement == security_requirement_req) and stream_cipher == stream_cipher_req and sensitive_domain == sensitive_domain_req and (circuit_area_requirement <= circuit_area_max and circuit_area_requirement >= circuit_area_min) and (throughput_requirement <= throughput_max and throughput_requirement >= throughput_min) and hardware_type == hardware_type_req and energy_performance == energy_performance_req:
+                p_recommendations.remove(no_rcmd_id)
                 p_recommendations.append(rcmd_id)
                 break
+    
+    if not p_recommendations:
+        for security_requirement in security_requirements:
+            rcmd_name = "No algorithm for "+security_requirement.lower()
+            rcmd_id = get_recommendation_id(recommendations, rcmd_name)
+            p_recommendations.append(rcmd_id)
 
     return p_recommendations
 
@@ -90,14 +99,39 @@ def belongs_sensitive_domain(application_area):
 def get_answer_content(session, question_number):
     return session['questions'][question_number]['answer']['content']
 
+"""
+[Summary]: Common method to get recommendations from a dependency module.
+[Arguments]: 
+    - $session$: A JSON Object that includes information about a session, including questions and user selected and/or user inputted answers.
+    - $dependency_number$: An integer that declares the dependency number, array format (0, length-1).
+[Returns]: A JSON Object that includes information about dependency module's recommendations.
+"""
 def get_dependency_recommendations(session, dependency_number):
     return session['dependencies'][dependency_number]['module']['last_session']['recommendations']
 
+"""
+[Summary]: Common method to get recommendation content from recommendations.
+[Arguments]: 
+    - $recommendations$: A JSON Object that includes information about recommendations from a different module.
+[Returns]: List of recommendations from a module.
+"""
 def get_recommendation_content(recommendations):
     recmd_content = []
     for recommendation in recommendations:
         recmd_content.append(recommendation['content'])
     return recmd_content
+
+"""
+[Summary]: Common method to get recommendation id by comparing his content with the recommendation name.
+[Arguments]: 
+    - $recommendations$: A JSON Object that includes information about recommendations.
+    - $recommendation_name$: A string that contains a recommendation name (content in JSON).
+[Returns]: Recommendation ID.
+"""
+def get_recommendation_id(recommendations, recommendation_name):
+    for recm in recommendations:
+        if recm['content'] == recommendation_name:
+            return recm['id']
 
 """
 [Summary]: Default SAM's logic main method.
@@ -117,9 +151,14 @@ def run(session, recommendations):
     sre_dependency_recommendations = get_dependency_recommendations(session, 0)
     security_requirements = get_recommendation_content(sre_dependency_recommendations)
 
+    if "Confidentiality" in security_requirements and "Authenticity" in security_requirements:
+        security_requirements.remove('Confidentiality')
+        security_requirements.remove('Authenticity')
+        security_requirements.append('Confidentiality plus Authenticity')
+
     sensitive_domain = belongs_sensitive_domain(application_area)    
     stream_cipher = need_stream_cipher(payload_size)
 
     csv_filename = 'external/conditions_hardware.csv'
 
-    return hardware_implementation(csv_filename, security_requirements, circuit_area_requirement, throughput_requirement, sensitive_domain, stream_cipher, hardware_type, energy_performance)
+    return hardware_implementation(csv_filename, recommendations, security_requirements, circuit_area_requirement, throughput_requirement, sensitive_domain, stream_cipher, hardware_type, energy_performance)

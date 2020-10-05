@@ -29,7 +29,6 @@
 """
 import json
 import pandas as pd
-DEBUG = False
 
 sensitive_domains = ["Smart Healthcare", "Connected Car", "Smart Pet Monitoring", "Smart Environmental Monitoring", "Smart Automotive/Transportation", "Smart Agriculture", "Smart Retail", "Industrial Automation", "Smart Supply Chain", "Smart Banking/Financial applications", "Smart Elderly Monitoring", "Smart Kid Monitoring", "Smart Grid", "Smart City", "Smart Home"]
 stream_ciphers = ["Continuous", "Unknown"]
@@ -53,6 +52,10 @@ def select_requirement_algorithm_existing_system(csv_filename, recommendations, 
 
     data = pd.read_csv(csv_filename, na_filter=False)
     for security_requirement in security_requirements:
+        no_rcmd_name = "No algorithm for "+security_requirement.lower()
+        no_rcmd_id = get_recommendation_id(recommendations, no_rcmd_name)
+        p_recommendations.append(no_rcmd_id)
+
         for row in data.values:
             security_requirement_req = row[0]
             stream_cipher_req = None if row[1] != ' ' else bool(row[1])
@@ -62,7 +65,7 @@ def select_requirement_algorithm_existing_system(csv_filename, recommendations, 
             ram_size_max = int(row[5])
             ram_size_min = int(row[6])
             hardware_type_req = str(row[7])
-            rcmd_id = row[8]
+            rcmd_id = get_recommendation_id(recommendations, row[8])
 
             # Existing system
             if (security_requirement == security_requirement_req) and (stream_cipher_req == None or stream_cipher == stream_cipher_req) and (sensitive_domain == sensitive_domain_req) and (flash_memory_size <= flash_memory_size_max and flash_memory_size >= flash_memory_size_min) and (ram_size <= ram_size_max and ram_size >= ram_size_min) and hardware_type == hardware_type_req:
@@ -92,6 +95,9 @@ def select_requirement_algorithm_planning(csv_filename, recommendations, cpu_bit
 
     data = pd.read_csv(csv_filename, na_filter=False)
     for security_requirement in security_requirements:
+        no_rcmd_name = "No algorithm for "+security_requirement.lower()
+        no_rcmd_id = get_recommendation_id(recommendations, no_rcmd_name)
+        p_recommendations.append(no_rcmd_id)
         for row in data.values:
             security_requirement_req = row[0]
             stream_cipher_req = None if row[1] != ' ' else bool(row[1])
@@ -101,13 +107,14 @@ def select_requirement_algorithm_planning(csv_filename, recommendations, cpu_bit
             ram_size_max = int(row[5])
             ram_size_min = int(row[6])
             cpu_bits_req = int(row[7])
-            rcmd_id = row[8]
+            rcmd_id = get_recommendation_id(recommendations, row[8])
 
             # Planning system
             if (security_requirement == security_requirement_req) and (stream_cipher_req == None or payload_size == stream_cipher_req) and (application_area == sensitive_domain_req) and (flash_memory_size <= flash_memory_size_max and flash_memory_size >= flash_memory_size_min) and (ram_size <= ram_size_max and ram_size >= ram_size_min) and cpu_bits >= cpu_bits_req:
+                p_recommendations.remove(no_rcmd_id)
                 p_recommendations.append(rcmd_id)
                 break
-    
+        
     return p_recommendations
 
 """
@@ -142,14 +149,39 @@ def belongs_sensitive_domain(application_area):
 def get_answer_content(session, question_number):
     return session['questions'][question_number]['answer']['content']
 
+"""
+[Summary]: Common method to get recommendations from a dependency module.
+[Arguments]: 
+    - $session$: A JSON Object that includes information about a session, including questions and user selected and/or user inputted answers.
+    - $dependency_number$: An integer that declares the dependency number, array format (0, length-1).
+[Returns]: A JSON Object that includes information about dependency module's recommendations.
+"""
 def get_dependency_recommendations(session, dependency_number):
     return session['dependencies'][dependency_number]['module']['last_session']['recommendations']
 
+"""
+[Summary]: Common method to get recommendation content from recommendations.
+[Arguments]: 
+    - $recommendations$: A JSON Object that includes information about recommendations from a different module.
+[Returns]: List of recommendations from a module.
+"""
 def get_recommendation_content(recommendations):
     recmd_content = []
     for recommendation in recommendations:
         recmd_content.append(recommendation['content'])
     return recmd_content
+
+"""
+[Summary]: Common method to get recommendation id by comparing his content with the recommendation name.
+[Arguments]: 
+    - $recommendations$: A JSON Object that includes information about recommendations.
+    - $recommendation_name$: A string that contains a recommendation name (content in JSON).
+[Returns]: Recommendation ID.
+"""
+def get_recommendation_id(recommendations, recommendation_name):
+    for recm in recommendations:
+        if recm['content'] == recommendation_name:
+            return recm['id']
 
 """
 [Summary]: Default SAM's logic main method.
@@ -170,6 +202,11 @@ def run(session, recommendations):
 
     sre_dependency_recommendations = get_dependency_recommendations(session, 0)
     security_requirements = get_recommendation_content(sre_dependency_recommendations)
+
+    if "Confidentiality" in security_requirements and "Authenticity" in security_requirements:
+        security_requirements.remove('Confidentiality')
+        security_requirements.remove('Authenticity')
+        security_requirements.append('Confidentiality plus Authenticity')
 
     sensitive_domain = belongs_sensitive_domain(application_area)    
     stream_cipher = need_stream_cipher(payload_size)

@@ -52,11 +52,12 @@ def get_answer_content(session, question_number):
 [Returns]: MUST return an array of recommendation IDs.
 """
 def run(session, recommendations):
-    DEBUG = True
+    DEBUG = False
     request_type = get_answer_content(session, 0)
 
     if(DEBUG): 
         modules.utils.console_log("Main_logic", str(session))
+        modules.utils.console_log("Main_logic", str(recommendations))
 
     if request_type == "Software":
         return external.Software.run(session, recommendations)
