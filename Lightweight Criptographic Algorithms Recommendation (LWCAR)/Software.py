@@ -215,7 +215,7 @@ def run(session, recommendations):
     if existing_system == 'Existing System':
         
         conditions_csv_filename = 'external/conditions_existing_software.csv'
-        error_message = ['The system is not capable']
+        error_message = [get_recommendation_id(recommendations, 'The system is not capable')]
 
         # Hardware type SBC
         if hardware_type == 'SBC':
