@@ -36,11 +36,13 @@ stream_ciphers = ["Continuous", "Unknown"]
 def hardware_implementation(csv_filename, recommendations, security_requirements, circuit_area_requirement, throughput_requirement, stream_cipher, sensitive_domain, hardware_type, energy_performance):
     p_recommendations = []
 
-    data = pd.read_csv(csv_filename, na_filter=False)
+    data = pd.read_csv(csv_filename, na_filter=False, delimiter=',', quotechar='"')
     for security_requirement in security_requirements:
+        
         no_rcmd_name = "No algorithm for "+security_requirement.lower()
         no_rcmd_id = get_recommendation_id(recommendations, no_rcmd_name)
         p_recommendations.append(no_rcmd_id)
+
         for row in data.values:
             security_requirement_req = row[0]
             stream_cipher_req = bool(row[1])
@@ -58,12 +60,6 @@ def hardware_implementation(csv_filename, recommendations, security_requirements
                 p_recommendations.remove(no_rcmd_id)
                 p_recommendations.append(rcmd_id)
                 break
-    
-    if not p_recommendations:
-        for security_requirement in security_requirements:
-            rcmd_name = "No algorithm for "+security_requirement.lower()
-            rcmd_id = get_recommendation_id(recommendations, rcmd_name)
-            p_recommendations.append(rcmd_id)
 
     return p_recommendations
 
@@ -154,7 +150,7 @@ def run(session, recommendations):
     if "Confidentiality" in security_requirements and "Authenticity" in security_requirements:
         security_requirements.remove('Confidentiality')
         security_requirements.remove('Authenticity')
-        security_requirements.append('Confidentiality plus Authenticity')
+        security_requirements.append('Confidentiality,Authenticity')
 
     sensitive_domain = belongs_sensitive_domain(application_area)    
     stream_cipher = need_stream_cipher(payload_size)
