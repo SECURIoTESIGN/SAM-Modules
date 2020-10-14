@@ -59,7 +59,7 @@ def select_requirement_algorithm_existing_system(csv_filename, recommendations, 
 
         for row in data.values:
             security_requirement_req = row[0]
-            stream_cipher_req = bool(int(row[1]))
+            stream_cipher_req = None if row[1] == ' ' else bool(int(row[1]))
             sensitive_domain_req = bool(int(row[2]))
             flash_memory_size_max = int(row[3])
             flash_memory_size_min = int(row[4])
@@ -69,7 +69,7 @@ def select_requirement_algorithm_existing_system(csv_filename, recommendations, 
             rcmd_id = get_recommendation_id(recommendations, row[8])
 
             # Existing system
-            if (security_requirement == security_requirement_req) and (stream_cipher == stream_cipher_req) and (sensitive_domain == sensitive_domain_req) and (flash_memory_size <= flash_memory_size_max and flash_memory_size >= flash_memory_size_min) and (ram_size <= ram_size_max and ram_size >= ram_size_min) and (hardware_type == hardware_type_req or not hardware_type_req):
+            if (security_requirement == security_requirement_req) and (stream_cipher_req == None or stream_cipher == stream_cipher_req) and (sensitive_domain == sensitive_domain_req) and (flash_memory_size <= flash_memory_size_max and flash_memory_size >= flash_memory_size_min) and (ram_size <= ram_size_max and ram_size >= ram_size_min) and (hardware_type == hardware_type_req or not hardware_type_req):
                 p_recommendations.remove(no_rcmd_id)
                 p_recommendations.append(rcmd_id)
 
@@ -105,7 +105,7 @@ def select_requirement_algorithm_planning(csv_filename, recommendations, cpu_bit
 
         for row in data.values:
             security_requirement_req = row[0]
-            stream_cipher_req = bool(int(row[1]))
+            stream_cipher_req = None if row[1] == ' ' else bool(int(row[1]))
             sensitive_domain_req = bool(int(row[2]))
             flash_memory_size_max = int(row[3])
             flash_memory_size_min = int(row[4])
@@ -115,7 +115,7 @@ def select_requirement_algorithm_planning(csv_filename, recommendations, cpu_bit
             rcmd_id = get_recommendation_id(recommendations, row[8])
 
             # Planning system
-            if (security_requirement == security_requirement_req) and (stream_cipher == stream_cipher_req) and (sensitive_domain == sensitive_domain_req) and (flash_memory_size <= flash_memory_size_max and flash_memory_size >= flash_memory_size_min) and (ram_size <= ram_size_max and ram_size >= ram_size_min) and cpu_bits >= cpu_bits_req:
+            if (security_requirement == security_requirement_req) and (stream_cipher_req == None or stream_cipher == stream_cipher_req) and (sensitive_domain == sensitive_domain_req) and (flash_memory_size <= flash_memory_size_max and flash_memory_size >= flash_memory_size_min) and (ram_size <= ram_size_max and ram_size >= ram_size_min) and cpu_bits >= cpu_bits_req:
                 p_recommendations.remove(no_rcmd_id)
                 p_recommendations.append(rcmd_id)
                 break
