@@ -244,56 +244,56 @@ Privacy,1,1,1800,2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC)
 Privacy,1,1,2501,8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,Trivium-80
 Privacy,1,1,810,970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,No algorithm for privacy
 Privacy,1,1,971,1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,No algorithm for privacy
-Privacy,1,1,1111,14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,Grain_v1-80
+Privacy,1,1,1111,1400, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,Grain_v1-80
 Privacy,1,1,1401,1570, 177.8,237,Application-specific Integrated Circuit (ASIC),Low Power,Grain_v1-80
 Privacy,1,0,1571,1799, 2.6,200,Application-specific Integrated Circuit (ASIC),Low Power,Grain_v1-80
 Privacy,1,0,1800,2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Low Power,Grain_v1-128
 Privacy,1,0,2501,8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,MICKEY_2.0-80
 Privacy,1,0,810,970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,No algorithm for privacy
 Privacy,1,0,971,1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,No algorithm for privacy
-Privacy,1,0,1111,14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,Grain_v1-80
+Privacy,1,0,1111,1400, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,Grain_v1-80
 Privacy,1,0,1401,1570, 177.8,237,Application-specific Integrated Circuit (ASIC),Low Power,Grain_v1-80
 Privacy,0,1,1571,1799, 2.6,200,Application-specific Integrated Circuit (ASIC),Low Power,TWINE64/80
 Privacy,0,1,1800,2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Low Power,TWINE64/128
 Privacy,0,1,2501,8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,Midori128/128
 Privacy,0,1,810,970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,SIMON64/128
 Privacy,0,1,971,1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,Piccolo64/80
-Privacy,0,1,1111,14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,Piccolo64/128
+Privacy,0,1,1111,1400, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,Piccolo64/128
 Privacy,0,1,1401,1570, 177.8,237,Application-specific Integrated Circuit (ASIC),Low Power,Piccolo64/128
 Privacy,0,0,1571,1799, 2.6,200,Application-specific Integrated Circuit (ASIC),Low Power,TWINE64/80
 Privacy,0,0,1800,2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Low Power,Midori64/128
 Privacy,0,0,2501,8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Low Power,Clefia128/128
 Privacy,0,0,810,970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Low Power,SIMON64/96
 Privacy,0,0,971,1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Low Power,Piccolo64/80
-Privacy,0,0,1111,14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,Piccolo64/128
+Privacy,0,0,1111,1400, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Low Power,Piccolo64/128
 Privacy,0,0,1401,1570, 177.8,237,Application-specific Integrated Circuit (ASIC),Low Power,Piccolo64/128
 Privacy,1,1,1571,1799, 2.6,200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Grain_v1-80
 Privacy,1,1,1800,2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Grain_v1-128
 Privacy,1,1,2501,8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Enocoro_v2-128
 Privacy,1,1,810,970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,No algorithm for privacy
 Privacy,1,1,971,1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,No algorithm for privacy
-Privacy,1,1,1111,14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Grain_v1-80
+Privacy,1,1,1111,1400, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Grain_v1-80
 Privacy,1,1,1401,1570, 177.8,237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Grain_v1-80
 Privacy,1,0,1571,1799, 2.6,200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Grain_v1-80
 Privacy,1,0,1800,2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Grain_v1-128
 Privacy,1,0,2501,8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Trivium-80
 Privacy,1,0,810,970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,No algorithm for privacy
 Privacy,1,0,971,1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,No algorithm for privacy
-Privacy,1,0,1111,14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Grain_v1-80
+Privacy,1,0,1111,1400, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Grain_v1-80
 Privacy,1,0,1401,1570, 177.8,237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Grain_v1-80
 Privacy,0,1,1571,1799, 2.6,200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Clefia128/192
 Privacy,0,1,1800,2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Midori64/128
 Privacy,0,1,2501,8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,TWINE64/128
 Privacy,0,1,810,970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,SIMON64/128
 Privacy,0,1,971,1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,SIMON64/128
-Privacy,0,1,1111,14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Midori64/128
+Privacy,0,1,1111,1400, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Midori64/128
 Privacy,0,1,1401,1570, 177.8,237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Midori64/128
 Privacy,0,0,1571,1799, 2.6,200,Application-specific Integrated Circuit (ASIC),Ultra-low Power,TWINE64/80
 Privacy,0,0,1800,2500, 2.8, 193.9,Application-specific Integrated Circuit (ASIC),Ultra-low Power,TWINE64/80
 Privacy,0,0,2501,8600, 133.3, 6400.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,Midori64/128
 Privacy,0,0,810,970, 4.2, 5.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,SIMON64/96
 Privacy,0,0,971,1110, 3.4, 16.3,Application-specific Integrated Circuit (ASIC),Ultra-low Power,SIMON64/96
-Privacy,0,0,1111,14000, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,SIMON64/128
+Privacy,0,0,1111,1400, 3.0, 12.1,Application-specific Integrated Circuit (ASIC),Ultra-low Power,SIMON64/128
 Privacy,0,0,1401,1570, 177.8,237,Application-specific Integrated Circuit (ASIC),Ultra-low Power,SIMON64/128
 Non-repudiation, ,1,1,1,1,1,Field-programmable Gate Array (FPGA),Low Power,No algorithm for non-repudiation
 Non-repudiation, ,1,1,1,1,1,Field-programmable Gate Array (FPGA),Low Power,No algorithm for non-repudiation
