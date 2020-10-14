@@ -45,8 +45,8 @@ def hardware_implementation(csv_filename, recommendations, security_requirements
 
         for row in data.values:
             security_requirement_req = row[0]
-            stream_cipher_req = bool(row[1])
-            sensitive_domain_req = bool(row[2])
+            stream_cipher_req = bool(int(row[1]))
+            sensitive_domain_req = bool(int(row[2]))
             circuit_area_min = float(row[3])
             circuit_area_max = float(row[4])
             throughput_min = float(row[5])
@@ -56,7 +56,7 @@ def hardware_implementation(csv_filename, recommendations, security_requirements
             rcmd_id = get_recommendation_id(recommendations, row[9])
 
             # We found a match for your system
-            if (security_requirement == security_requirement_req) and stream_cipher == stream_cipher_req and sensitive_domain == sensitive_domain_req and (circuit_area_requirement <= circuit_area_max and circuit_area_requirement >= circuit_area_min) and (throughput_requirement <= throughput_max and throughput_requirement >= throughput_min) and hardware_type == hardware_type_req and energy_performance == energy_performance_req:
+            if security_requirement == security_requirement_req and stream_cipher == stream_cipher_req and sensitive_domain == sensitive_domain_req and (circuit_area_requirement <= circuit_area_max and circuit_area_requirement >= circuit_area_min) and (throughput_requirement <= throughput_max and throughput_requirement >= throughput_min) and hardware_type == hardware_type_req and energy_performance == energy_performance_req:
                 p_recommendations.remove(no_rcmd_id)
                 p_recommendations.append(rcmd_id)
                 break
@@ -157,4 +157,4 @@ def run(session, recommendations):
 
     csv_filename = 'external/conditions_hardware.csv'
 
-    return hardware_implementation(csv_filename, recommendations, security_requirements, circuit_area_requirement, throughput_requirement, sensitive_domain, stream_cipher, hardware_type, energy_performance)
+    return hardware_implementation(csv_filename, recommendations, security_requirements, circuit_area_requirement, throughput_requirement, stream_cipher, sensitive_domain, hardware_type, energy_performance)

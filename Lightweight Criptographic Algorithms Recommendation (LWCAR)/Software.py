@@ -46,7 +46,7 @@ stream_ciphers = ["Continuous", "Unknown"]
     - $security_requirements$: Security requirements the user wants to fulfill (array of strings).
 [Returns]: An array containing the algorithm for each requirement, orderly.
 """
-def select_requirement_algorithm_existing_system(csv_filename, recommendations, hardware_type, flash_memory_size, ram_size, stream_cipher, sensitive_domain, security_requirements):
+def select_requirement_algorithm_existing_system(csv_filename, recommendations, hardware_type, flash_memory_size, ram_size, sensitive_domain, stream_cipher, security_requirements):
 
     p_recommendations = []
 
@@ -59,8 +59,8 @@ def select_requirement_algorithm_existing_system(csv_filename, recommendations, 
 
         for row in data.values:
             security_requirement_req = row[0]
-            stream_cipher_req = bool(row[1])
-            sensitive_domain_req = bool(row[2])
+            stream_cipher_req = bool(int(row[1]))
+            sensitive_domain_req = bool(int(row[2]))
             flash_memory_size_max = int(row[3])
             flash_memory_size_min = int(row[4])
             ram_size_max = int(row[5])
@@ -105,8 +105,8 @@ def select_requirement_algorithm_planning(csv_filename, recommendations, cpu_bit
 
         for row in data.values:
             security_requirement_req = row[0]
-            stream_cipher_req = bool(row[1])
-            sensitive_domain_req = bool(row[2])
+            stream_cipher_req = bool(int(row[1]))
+            sensitive_domain_req = bool(int(row[2]))
             flash_memory_size_max = int(row[3])
             flash_memory_size_min = int(row[4])
             ram_size_max = int(row[5])
