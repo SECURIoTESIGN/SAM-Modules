@@ -69,7 +69,7 @@ def select_requirement_algorithm_existing_system(csv_filename, recommendations, 
             rcmd_id = get_recommendation_id(recommendations, row[8])
 
             # Existing system
-            if (security_requirement == security_requirement_req) and (stream_cipher_req == None or stream_cipher == stream_cipher_req) and (sensitive_domain == sensitive_domain_req) and (flash_memory_size <= flash_memory_size_max and flash_memory_size >= flash_memory_size_min) and (ram_size <= ram_size_max and ram_size >= ram_size_min) and (hardware_type == hardware_type_req or not hardware_type_req):
+            if (security_requirement == security_requirement_req) and (stream_cipher_req == None or stream_cipher == stream_cipher_req) and (sensitive_domain == sensitive_domain_req) and (flash_memory_size <= flash_memory_size_max and flash_memory_size >= flash_memory_size_min) and (ram_size <= ram_size_max and ram_size >= ram_size_min) and (hardware_type == hardware_type_req or not hardware_type_req):             
                 p_recommendations.remove(no_rcmd_id)
                 p_recommendations.append(rcmd_id)
 
@@ -152,6 +152,8 @@ def belongs_sensitive_domain(application_area):
 [Returns]: Answer content for specified question.
 """
 def get_answer_content(session, question_number):
+    global answer_num 
+    answer_num += 1
     return session['questions'][question_number]['answer']['content']
 
 """
@@ -196,14 +198,18 @@ def get_recommendation_id(recommendations, recommendation_name):
 [Returns]: MUST return an array of recommendation IDs.
 """
 def run(session, recommendations):
-    existing_system = get_answer_content(session, 1)
-    hardware_type = get_answer_content(session, 2)
-    cpu = float(get_answer_content(session, 3).split(sep="-", maxsplit=1)[0])
-    flash_memory_size = float(get_answer_content(session, 4))
-    ram_size = float(get_answer_content(session, 5))
-    cpu_clock = float(get_answer_content(session, 6))
-    application_area = get_answer_content(session, 7)
-    payload_size = get_answer_content(session, 8)
+    global answer_num
+    answer_num = 1
+
+    existing_system = get_answer_content(session, answer_num)
+    hardware_type = get_answer_content(session, answer_num)
+    cpu_arch = get_answer_content(session, answer_num)
+    cpu = float(get_answer_content(session, answer_num)) if cpu_arch == 'Other' else float(cpu_arch.split(sep="-", maxsplit=1)[0])
+    flash_memory_size = float(get_answer_content(session, answer_num))
+    ram_size = float(get_answer_content(session, answer_num))
+    cpu_clock = float(get_answer_content(session, answer_num))
+    application_area = get_answer_content(session, answer_num)
+    payload_size = get_answer_content(session, answer_num)
 
     sre_dependency_recommendations = get_dependency_recommendations(session, 0)
     security_requirements = get_recommendation_content(sre_dependency_recommendations)
