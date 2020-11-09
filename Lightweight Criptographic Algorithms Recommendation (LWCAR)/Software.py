@@ -52,11 +52,6 @@ def select_requirement_algorithm_existing_system(csv_filename, recommendations, 
 
     data = pd.read_csv(csv_filename, na_filter=False, delimiter=',', quotechar='"')
     for security_requirement in security_requirements:
-        
-        no_rcmd_name = "No algorithm for "+security_requirement.lower()
-        no_rcmd_id = get_recommendation_id(recommendations, no_rcmd_name)
-        p_recommendations.append(no_rcmd_id)
-
         for row in data.values:
             security_requirement_req = row[0]
             stream_cipher_req = None if row[1] == ' ' else bool(int(row[1]))
@@ -66,14 +61,17 @@ def select_requirement_algorithm_existing_system(csv_filename, recommendations, 
             ram_size_max = int(row[5])
             ram_size_min = int(row[6])
             hardware_type_req = str(row[7])
-            rcmd_id = get_recommendation_id(recommendations, row[8])
+            rcmd_name = row[8]
+            rcmd_id = get_recommendation_id(recommendations, rcmd_name)
 
             # Existing system
             if (security_requirement == security_requirement_req) and (stream_cipher_req == None or stream_cipher == stream_cipher_req) and (sensitive_domain == sensitive_domain_req) and (flash_memory_size <= flash_memory_size_max and flash_memory_size >= flash_memory_size_min) and (ram_size <= ram_size_max and ram_size >= ram_size_min) and (hardware_type == hardware_type_req or not hardware_type_req):             
-                p_recommendations.remove(no_rcmd_id)
-                p_recommendations.append(rcmd_id)
-
-                break
+                # If the recommendation says there is no algorithm, don't write anything
+                if "no algorithm" in rcmd_name.lower():
+                    break
+                if rcmd_id not in p_recommendations:
+                    p_recommendations.append(rcmd_id)
+                    break
 
     return p_recommendations
 
@@ -99,10 +97,6 @@ def select_requirement_algorithm_planning(csv_filename, recommendations, cpu_bit
     data = pd.read_csv(csv_filename, na_filter=False, delimiter=',', quotechar='"')
 
     for security_requirement in security_requirements:
-        no_rcmd_name = "No algorithm for "+security_requirement.lower()
-        no_rcmd_id = get_recommendation_id(recommendations, no_rcmd_name)
-        p_recommendations.append(no_rcmd_id)
-
         for row in data.values:
             security_requirement_req = row[0]
             stream_cipher_req = None if row[1] == ' ' else bool(int(row[1]))
@@ -112,14 +106,18 @@ def select_requirement_algorithm_planning(csv_filename, recommendations, cpu_bit
             ram_size_max = int(row[5])
             ram_size_min = int(row[6])
             cpu_bits_req = int(row[7])
-            rcmd_id = get_recommendation_id(recommendations, row[8])
+            rcmd_name = row[8]
+            rcmd_id = get_recommendation_id(recommendations, rcmd_name)
 
             # Planning system
             if (security_requirement == security_requirement_req) and (stream_cipher_req == None or stream_cipher == stream_cipher_req) and (sensitive_domain == sensitive_domain_req) and (flash_memory_size <= flash_memory_size_max and flash_memory_size >= flash_memory_size_min) and (ram_size <= ram_size_max and ram_size >= ram_size_min) and cpu_bits >= cpu_bits_req:
-                p_recommendations.remove(no_rcmd_id)
-                p_recommendations.append(rcmd_id)
-                break
-        
+                # If the recommendation says there is no algorithm, don't write anything
+                if "no algorithm" in rcmd_name.lower():
+                    break
+                if rcmd_id not in p_recommendations:
+                    p_recommendations.append(rcmd_id)
+                    break
+
     return p_recommendations
 
 """
@@ -151,10 +149,11 @@ def belongs_sensitive_domain(application_area):
     - $question_number$: An integer that declares the question number, array format (0, length-1).
 [Returns]: Answer content for specified question.
 """
-def get_answer_content(session, question_number):
-    global answer_num 
+def get_answer_content():
+    global answer_num, _session
+    answer = _session['questions'][answer_num]['answer']['content']
     answer_num += 1
-    return session['questions'][question_number]['answer']['content']
+    return answer
 
 """
 [Summary]: Common method to get recommendations from a dependency module.
@@ -198,18 +197,35 @@ def get_recommendation_id(recommendations, recommendation_name):
 [Returns]: MUST return an array of recommendation IDs.
 """
 def run(session, recommendations):
-    global answer_num
+    global answer_num, _session
+    _session = session
     answer_num = 1
 
-    existing_system = get_answer_content(session, answer_num)
-    hardware_type = get_answer_content(session, answer_num)
-    cpu_arch = get_answer_content(session, answer_num)
-    cpu = float(get_answer_content(session, answer_num)) if cpu_arch == 'Other' else float(cpu_arch.split(sep="-", maxsplit=1)[0])
-    flash_memory_size = float(get_answer_content(session, answer_num))
-    ram_size = float(get_answer_content(session, answer_num))
-    cpu_clock = float(get_answer_content(session, answer_num))
-    application_area = get_answer_content(session, answer_num)
-    payload_size = get_answer_content(session, answer_num)
+    existing_system = get_answer_content()
+    hardware_type = get_answer_content()
+    cpu_arch = get_answer_content()
+    try:
+        cpu = float(get_answer_content()) if cpu_arch == 'Other' else float(cpu_arch.split(sep="-", maxsplit=1)[0])
+    except (ValueError, TypeError):
+        raise Exception("CPU bit must be a numeric value.")
+    
+    try:
+        flash_memory_size = float(get_answer_content())
+    except (ValueError, TypeError):
+        raise Exception("Flash memory size must be a numeric value.")
+
+    try: 
+        ram_size = float(get_answer_content())
+    except (ValueError, TypeError):
+        raise Exception("RAM size must be a numeric value.")
+
+    try:
+        cpu_clock = float(get_answer_content())
+    except (ValueError, TypeError):
+        raise Exception("CPU clock must be a numeric value.")
+
+    application_area = get_answer_content()
+    payload_size = get_answer_content()
 
     sre_dependency_recommendations = get_dependency_recommendations(session, 0)
     security_requirements = get_recommendation_content(sre_dependency_recommendations)
