@@ -23,9 +23,6 @@
 //  from FCT/COMPETE/FEDER (Projects with reference numbers UID/EEA/50008/2013 and 
 //  POCI-01-0145-FEDER-030657) 
 // ---------------------------------------------------------------------------
-##############################################################################
-                        SAM - LOGIC EXAMPLE FILE
-##############################################################################  
 """
 import json
 
@@ -41,7 +38,15 @@ import external.Hardware
 [Returns]: Answer content for specified question.
 """
 def get_answer_content(session, question_number):
-    return session['questions'][question_number]['answer']['content']
+    answers = session['questions'][question_number]['answer']
+    if len(answers) == 1:
+        answer = answers[0]['content']
+    else:
+        answer = []
+        for ans in answers:
+            answer.append(ans['content'])
+
+    return answer
 
 
 """
@@ -56,9 +61,9 @@ def run(session, recommendations):
     request_type = get_answer_content(session, 0)
 
     if(DEBUG): 
-        modules.utils.console_log("Main_logic", str(session))
-        modules.utils.console_log("Main_logic", str(recommendations))
-
+        modules.utils.console_log("logic_3", str(session))
+        modules.utils.console_log("logic_3", str(recommendations))
+    
     if request_type == "Software":
         return external.Software.run(session, recommendations)
     else:
